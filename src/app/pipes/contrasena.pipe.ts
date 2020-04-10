@@ -6,11 +6,6 @@ import { stringify } from "querystring";
 })
 export class ContrasenaPipe implements PipeTransform {
   transform(value: string, activar: boolean): string {
-    if (!activar) return value;
-    let cadena: string = "";
-    for (let i = 0; i < value.length; i++) {
-      cadena += "*";
-    }
-    return cadena;
+    return activar ? "*".repeat(value.length) : value;
   }
 }
