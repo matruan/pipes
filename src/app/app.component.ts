@@ -7,6 +7,7 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   nombre: string = "Capitán América";
+  nombrePropio: string = "MaTiAs rUiZ aNdRes";
   arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   personajes: string[] = ["Ironman", "Spiderman", "Thor", "Loki", "Groot"];
   PI: number = Math.PI;
@@ -14,6 +15,7 @@ export class AppComponent {
   salario: number = 1234.5;
   fecha: Date = new Date();
   idioma: string = "ca";
+  videoUrl: string = "https://www.youtube.com/embed/TlO8oI8B2HA";
   heroe = {
     nombre: "Logan",
     clave: "Wolverine",
